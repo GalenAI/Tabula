@@ -7,11 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5101B30128E9599B001648B3 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 5101B30028E9599B001648B3 /* Starscream */; };
 		5180007B28E8FD35002F98D3 /* TabulaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5180007A28E8FD35002F98D3 /* TabulaApp.swift */; };
 		5180007D28E8FD35002F98D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5180007C28E8FD35002F98D3 /* ContentView.swift */; };
 		5180007F28E8FD39002F98D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5180007E28E8FD39002F98D3 /* Assets.xcassets */; };
 		5180008228E8FD39002F98D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5180008128E8FD39002F98D3 /* Preview Assets.xcassets */; };
+		5180008A28E920E9002F98D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5180008928E920E9002F98D3 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		51989AA028E95771001862E8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5180007728E8FD35002F98D3 /* Tabula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tabula.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +34,8 @@
 		5180007C28E8FD35002F98D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5180007E28E8FD39002F98D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5180008128E8FD39002F98D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5180008928E920E9002F98D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		51989A7828E92C15001862E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5101B30128E9599B001648B3 /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +55,7 @@
 			children = (
 				5180007928E8FD35002F98D3 /* Tabula */,
 				5180007828E8FD35002F98D3 /* Products */,
+				51989A9D28E95771001862E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +70,8 @@
 		5180007928E8FD35002F98D3 /* Tabula */ = {
 			isa = PBXGroup;
 			children = (
+				51989A7828E92C15001862E8 /* Info.plist */,
+				5180008928E920E9002F98D3 /* AppDelegate.swift */,
 				5180007A28E8FD35002F98D3 /* TabulaApp.swift */,
 				5180007C28E8FD35002F98D3 /* ContentView.swift */,
 				5180007E28E8FD39002F98D3 /* Assets.xcassets */,
@@ -67,6 +88,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		51989A9D28E95771001862E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,12 +105,16 @@
 				5180007328E8FD35002F98D3 /* Sources */,
 				5180007428E8FD35002F98D3 /* Frameworks */,
 				5180007528E8FD35002F98D3 /* Resources */,
+				51989AA028E95771001862E8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Tabula;
+			packageProductDependencies = (
+				5101B30028E9599B001648B3 /* Starscream */,
+			);
 			productName = Tabula;
 			productReference = 5180007728E8FD35002F98D3 /* Tabula.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +143,9 @@
 				Base,
 			);
 			mainGroup = 5180006E28E8FD35002F98D3;
+			packageReferences = (
+				5101B2FF28E9599B001648B3 /* XCRemoteSwiftPackageReference "Starscream" */,
+			);
 			productRefGroup = 5180007828E8FD35002F98D3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5180008A28E920E9002F98D3 /* AppDelegate.swift in Sources */,
 				5180007D28E8FD35002F98D3 /* ContentView.swift in Sources */,
 				5180007B28E8FD35002F98D3 /* TabulaApp.swift in Sources */,
 			);
@@ -270,6 +306,8 @@
 				DEVELOPMENT_TEAM = MKB4K8L5MQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tabula/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Take transcriptions of audio";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +337,8 @@
 				DEVELOPMENT_TEAM = MKB4K8L5MQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tabula/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Take transcriptions of audio";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +379,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5101B2FF28E9599B001648B3 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5101B30028E9599B001648B3 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5101B2FF28E9599B001648B3 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5180006F28E8FD35002F98D3 /* Project object */;
 }
